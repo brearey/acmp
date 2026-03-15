@@ -1,5 +1,5 @@
 package main
 
 func main() {
-	Acmp2()
+	Triangle()
 }
