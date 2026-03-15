@@ -10,8 +10,12 @@ func Triangle() {
 	fmt.Scan(&a)
 	fmt.Scan(&b)
 	fmt.Scan(&c)
-	
-	if (a > 0 && b > 0 && c > 0) {
+
+	aIsGood := a < b+c
+	bIsGood := b < a+c
+	cIsGood := c < a+b
+
+	if aIsGood && bIsGood && cIsGood {
 		fmt.Println("YES")
 	} else {
 		fmt.Println("NO")

@@ -16,7 +16,7 @@ func Acmp2() {
 	fmt.Scan(&N)
 	var sum int
 
-	if (N > 0) {
+	if N > 0 {
 		for i := 1; i <= N; i++ {
 			sum += i
 		}
