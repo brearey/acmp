@@ -16,12 +16,19 @@ func acmp2() {
 	// 5 -> 15
 	var N int
 	fmt.Scan(&N)
-
 	var sum int
-	for i := 1; i <= N; i++ {
-		sum += i
+
+	if (N > 0) {
+		for i := 1; i <= N; i++ {
+			sum += i
+		}
+		fmt.Println(sum)
+	} else {
+		for i := 1; i >= N; i-- {
+			sum += i
+		}
+		fmt.Println(sum)
 	}
-	fmt.Println(sum)
 }
 
 func main() {
